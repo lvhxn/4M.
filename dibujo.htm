@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo</title>
+    <style>
+      body {
+        font-family: 'Georgia', serif;
+        background-color: #f3f1f7; /* Fondo suave */
+        color: #4a4a4a;
+        text-align: center;
+        padding: 40px;
+        margin: 0;
+        box-sizing: border-box;
+        background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');
+        background-size: 30px 30px;
+      }
+
+      .dibujo-container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
+        border: 2px solid #8e44ad; /* Borde lila alrededor */
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #8e44ad, #9b59b6);
+      }
+
+      h1 {
+        color: #ffffff; /* Lila suave */
+        font-size: 3.5em;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        font-family: 'Georgia', serif;
+        font-weight: bold;
+      }
+
+      .dibujo {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .dibujo:hover {
+        transform: scale(1.05); /* Efecto de ampliación */
+      }
+
+      footer p {
+        font-style: italic;
+        color: #9b59b6;
+        font-size: 1.2em;
+        margin-top: 30px;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* Agregamos un pequeño borde animado a las esquinas */
+      .dibujo-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        pointer-events: none;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+   
+      @media (max-width: 600px) {
+        body {
+          padding: 20px;
+        }
+
+        .dibujo-container {
+          padding: 20px;
+          max-width: 100%;
+          border: none;
+          box-shadow: none;
+        }
+
+        h1 {
+          font-size: 2.5em;
+        }
+
+        footer p {
+          font-size: 1.1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dibujo-container">
+      <h1><u><em>Fotitos.</em></u></h1>
+      <img src="https://drive.google.com/file/d/1IucZdpmlGO52SxTDbY8wFXKdNE20SwND/view?usp=sharing" alt="Dibujo" class="dibujo">
+    </div>
+
+    <footer>
+      <p>Je t´amie 🌿</p>
+    </footer>
+  </body>
+</html>
